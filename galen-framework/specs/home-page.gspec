@@ -1,0 +1,14 @@
+@objects
+    nav         xpath    /html/body/header/div/div/div/div/div/div[2]/nav
+    nav-img     xpath    /html/body/header/div/div/div/div/div/div[2]/nav/a[1]/img
+
+
+= Header section =
+    nav:
+        height 50 to 60px
+    nav-img:
+        height 35px
+
+= Quick links section =
+    #foodSafetybbu:
+    #height 55px

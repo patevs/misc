@@ -1,0 +1,65 @@
+{
+  "testId" : "1-home-page-on-a-small-mobile-device",
+  "name" : "Home page on a small mobile device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://localhost:8181     320x600",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check ./specs/home-page.gspec --include \"mobile,all\" --exclude \"nomobile\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: ./specs/home-page.gspec included tags: mobile,all",
+          "status" : "info",
+          "time" : 1528789170681,
+          "includedTags" : [ "mobile", "all" ],
+          "excludedTags" : [ "nomobile" ],
+          "sections" : [ {
+            "name" : "Header section",
+            "place" : {
+              "filePath" : "./specs/home-page.gspec",
+              "lineNumber" : 6
+            },
+            "objects" : [ {
+              "name" : "nav",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "./specs/home-page.gspec",
+                  "lineNumber" : 8
+                },
+                "name" : "height 50 to 60px",
+                "highlight" : [ "nav" ]
+              } ]
+            }, {
+              "name" : "nav-img",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "./specs/home-page.gspec",
+                  "lineNumber" : 10
+                },
+                "name" : "height 35px",
+                "highlight" : [ "nav-img" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "nav-img" : {
+              "area" : [ 15, 10, 150, 35 ]
+            },
+            "nav" : {
+              "area" : [ 0, 0, 335, 55 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1528789169742,
+        "type" : "node"
+      } ],
+      "time" : 1528789153268,
+      "type" : "node"
+    } ]
+  }
+}
