@@ -1,0 +1,3 @@
+[submodule "mvn/mvn.001"]
+	path = mvn/mvn.001
+	url = https://github.com/patevs/mvn.001.git
