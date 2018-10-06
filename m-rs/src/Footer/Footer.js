@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 
 // import bootstrap component; image
-import { Grid, Row, Col, Image } from 'react-bootstrap'
+import { Image } from 'react-bootstrap'
 
 // import footer component style sheet
 import './Footer.css';

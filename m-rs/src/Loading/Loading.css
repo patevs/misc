@@ -1,0 +1,12 @@
+
+/* Loading react component style sheet */
+
+.Loading {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#load > Image {
+  width: 1em;
+  height: 1em;
+}
