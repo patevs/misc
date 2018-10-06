@@ -1,14 +1,19 @@
+
+/* Jumbo react component style sheet */
+
 .Jumbo {
   text-align: center;
   margin: 0 auto;
+  padding-top: 4em;
 }
 
 #tron {
   background: #D5D1D6;
 }
 
-@media(max-width:510px){
-	#tron > img {
+/* Extra Small Devices, Phones */
+@media(min-width:480px){
+	#tron > Image {
 		margin-top: -2em;
 		width: 99vw;
 		margin-bottom: 1em;
