@@ -4,12 +4,12 @@
 .Footer {
   text-align: center;
   margin: 0 auto;
+  padding-left: 2em;
 }
 
 #foot {
   background: #D5D1D6;
-  margin-bottom: .5em;
-  padding-top: 4em;
+  margin-bottom: 1em;
 }
 
 /* Extra Small Devices, Phones */

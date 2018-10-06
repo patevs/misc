@@ -16,7 +16,7 @@ class Jumbo extends Component {
 
     		<Jumbotron id="tron">
 
-          <Image src="./assets/imgs/Jumbo.png" alt="jumbo header" responsive />
+          <Image src="./assets/imgs/Jumbo.png" alt="jumbo header" />
 
     		</Jumbotron>
 

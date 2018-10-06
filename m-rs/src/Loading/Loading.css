@@ -3,7 +3,8 @@
 
 .Loading {
   text-align: center;
-  margin: 4em auto;
+  margin: 2em auto;
+  padding-left: 2em;
 }
 
 #load > Image {
@@ -24,9 +25,18 @@
 		}
 }
 
+#load-btns {
+  display: inline-block;
+  margin: 0 auto;
+  padding-top: 6em;
+}
+
 /* Extra Small Devices, Phones */
 @media(max-width:480px){
 	#load-img {
     margin-left: 4em;
 	}
+  #load-btns {
+    margin-left: 4em;
+  }
 }

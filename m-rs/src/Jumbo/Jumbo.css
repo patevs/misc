@@ -4,7 +4,7 @@
 .Jumbo {
   text-align: center;
   margin: 0 auto;
-  padding-top: 2em;
+  padding-top: .5em;
 }
 
 #tron {
@@ -16,7 +16,6 @@
 	#tron > Image {
 		margin-top: -2em;
 		width: 99vw;
-		margin-bottom: 1em;
 	  /*display: none;*/
 	}
 }
