@@ -1,0 +1,20 @@
+
+/* Footer react component style sheet */
+
+.Footer {
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 2em;
+}
+
+#foot {
+  background: #D5D1D6;
+  margin-bottom: 1em;
+}
+
+/* Extra Small Devices, Phones */
+@media(max-width:480px){
+	#foot {
+    padding-left: 4em;
+	}
+}
