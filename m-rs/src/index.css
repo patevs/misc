@@ -1,0 +1,58 @@
+
+/* Index Css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #D5D1D6;
+  /*width: auto !important; Firefox will set width as auto */
+}
+
+/* Loading Bar CSS */
+
+.LoadingBar {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.ldBar {
+  /*width: 50%;
+  height: 50%;*/
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 21vh;
+}
+
+#mapid {
+  display: block;
+  margin: 0 auto; 
+  border: 2px solid black;
+  margin-bottom: 4em;
+}
+/*
+@media(max-width:510px){
+  #mapbox {
+    margin-left: .5em;
+    margin-right: .5em;
+  }
+}
+@media(min-width:960px){
+    #mapbox {
+      /*margin: 0 auto;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+}
+@media(min-width:1200px){
+    #mapbox {
+      /*margin: 0 auto;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+}
+*/
+
