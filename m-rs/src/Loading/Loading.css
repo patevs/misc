@@ -3,10 +3,30 @@
 
 .Loading {
   text-align: center;
-  margin: 0 auto;
+  margin: 4em auto;
 }
 
 #load > Image {
   width: 1em;
   height: 1em;
+}
+
+#load-img {
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+/* Extra Small Devices, Phones */
+@media(max-width:480px){
+	#load-img {
+    margin-left: 4em;
+	}
 }

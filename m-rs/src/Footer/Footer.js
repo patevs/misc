@@ -15,7 +15,7 @@ class Footer extends Component {
       <div className="Footer">
 
         <div id="foot">
-          <Image src="./assets/imgs/footer.png" alt="page footer" responsive />
+          <Image src="./assets/imgs/footer.png" alt="page footer" />
         </div>
 
       </div>

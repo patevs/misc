@@ -10,17 +10,19 @@ import './Loading.css';
 
 // Loading react component
 class Loading extends Component {
+
   render() {
     return (
       <div className="Loading">
 
         <div id="load">
-          <Image src="./assets/imgs/loading.png" alt="page loading animation" />
+          <Image id="load-img" src="./assets/imgs/loading.png" alt="page loading animation" />
         </div>
 
       </div>
     );
   }
+
 }
 
 export default Loading;

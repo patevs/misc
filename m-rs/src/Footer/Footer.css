@@ -8,12 +8,13 @@
 
 #foot {
   background: #D5D1D6;
+  margin-bottom: .5em;
+  padding-top: 4em;
 }
 
 /* Extra Small Devices, Phones */
 @media(max-width:480px){
-	#foot > Image {
+	#foot {
     padding-left: 4em;
-		margin-bottom: 1em;
 	}
 }
