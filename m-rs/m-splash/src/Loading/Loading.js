@@ -2,8 +2,6 @@
 // react component library import
 import React, { Component } from 'react';
 
-import { unmountComponentAtNode } from 'react-dom';
-
 // import bootstrap component; image
 import { Image } from 'react-bootstrap'
 
@@ -27,8 +25,7 @@ class Loading extends Component {
       var elem = document.querySelector('#load');
       elem.style.display = 'none';
       elem.parentNode.removeChild(elem);
-      unmountComponentAtNode(elem);
-    }, 3000);
+    }, 2000);
   }
 
   render() {
@@ -46,14 +43,3 @@ class Loading extends Component {
 }
 
 export default Loading;
-
-/*
-<ButtonToolbar id="load-btns">
-  <Button bsStyle="primary" bsSize="large">
-    Login
-  </Button>
-  <Button bsSize="large">
-    Signup
-  </Button>
-</ButtonToolbar>
-*/

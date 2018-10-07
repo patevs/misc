@@ -3,7 +3,7 @@
 
 .Loading {
   text-align: center;
-  margin: 2em auto;
+  margin: 1em auto;
   padding-left: 2em;
 }
 
@@ -23,12 +23,6 @@
 
 #load-img {
   -webkit-animation: rotation 2s infinite linear;
-}
-
-#load-btns {
-  display: inline-block;
-  margin: 0 auto;
-  padding-top: 6em;
 }
 
 /* Extra Small Devices, Phones */

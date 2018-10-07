@@ -1,0 +1,15 @@
+
+/* Login react component style sheet */
+
+.Login {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: .5em;
+  padding-bottom: 1em;
+  opacity: 0;
+}
+
+#load-btns {
+  display: inline-block;
+  margin: 0 auto;
+}
