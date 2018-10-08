@@ -8,7 +8,7 @@ import { ButtonToolbar, Button } from 'react-bootstrap'
 // import Login style sheet
 import './Login.css';
 
-// Login Header react component
+// Login react component
 class Login extends Component {
 
   //* TODO: button click handle *//
@@ -32,7 +32,7 @@ class Login extends Component {
     return (
       <div className="Login">
         <ButtonToolbar id="load-btns">
-          <Button bsStyle="primary" bsSize="large">
+          <Button bsStyle="success" bsSize="large">
             Login
           </Button>
           <Button bsSize="large">
@@ -45,14 +45,3 @@ class Login extends Component {
 }
 
 export default Login;
-
-/*
-<ButtonToolbar id="load-btns">
-  <Button bsStyle="primary" bsSize="large">
-    Login
-  </Button>
-  <Button bsSize="large">
-    Signup
-  </Button>
-</ButtonToolbar>
-*/
