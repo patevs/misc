@@ -10,6 +10,8 @@ import Loading from './Loading/Loading';
 import LoginForm from './LoginForm/LoginForm';
 // import footer component
 import Footer from './Footer/Footer';
+// import MessageList component
+import MessageList from './MessageList/MessageList';
 
 // import main style sheet
 import './index.css';
@@ -21,6 +23,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(<Jumbo />, document.getElementById('jumbo'));
 ReactDOM.render(<Loading />, document.getElementById('loading'));
 ReactDOM.render(<LoginForm />, document.getElementById('login-form'));
+ReactDOM.render(<MessageList />, document.getElementById('message-list'));
 ReactDOM.render(<Footer />, document.getElementById('footer'));
 
 // If you want your app to work offline and load faster, you can change
