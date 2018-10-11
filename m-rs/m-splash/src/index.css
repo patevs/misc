@@ -7,5 +7,4 @@ body {
   font-family: sans-serif;
   background: #D5D1D6;
   /*width: auto !important; Firefox will set width as auto */
-  min-width: 400px;
 }

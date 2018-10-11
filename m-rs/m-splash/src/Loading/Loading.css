@@ -3,7 +3,7 @@
 
 .Loading {
   text-align: center;
-  margin: 2em auto;
+  margin: 1em auto;
   padding-left: 2em;
 }
 
@@ -12,23 +12,17 @@
   height: 1em;
 }
 
+@-webkit-keyframes rotation {
+    from{
+      -webkit-transform: rotate(0deg);
+    }
+    to{
+      -webkit-transform: rotate(359deg);
+    }
+}
+
 #load-img {
   -webkit-animation: rotation 2s infinite linear;
-}
-
-@-webkit-keyframes rotation {
-		from {
-				-webkit-transform: rotate(0deg);
-		}
-		to {
-				-webkit-transform: rotate(359deg);
-		}
-}
-
-#load-btns {
-  display: inline-block;
-  margin: 0 auto;
-  padding-top: 6em;
 }
 
 /* Extra Small Devices, Phones */
