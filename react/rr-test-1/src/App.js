@@ -12,7 +12,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Error from './components/Error';
-import Navigation from './components/Navigation';
+import Navigation from './components/common/Navigation/Navigation';
 
 // import app styles
 import './App.css';
@@ -42,3 +42,5 @@ class App extends Component {
 }
 
 export default App;
+
+//            <Navigation />

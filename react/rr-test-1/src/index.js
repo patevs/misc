@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 // import common components
-import Jumbo from './components/common/Jumbo';
+import Jumbo from './components/common/Jumbo/Jumbo';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-
+// render components
 ReactDOM.render(<Jumbo />, document.getElementById('jumbo'));
 ReactDOM.render(<App />, document.getElementById('root'));
 
