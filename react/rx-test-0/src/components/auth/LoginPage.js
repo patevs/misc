@@ -10,17 +10,28 @@ class LoginPage extends Component {
     super();
     this.state = { user: null };
     this.widget = new OktaSignIn({
-        baseUrl: 'https://dev-613272.oktapreview.com',
-        clientId: '0oagk0kmknVnF2xLE0h7',
-        redirectUri: 'http://localhost:3000',
-        authParams: {
-          issuer: 'default',
-          responseType: 'id_token'
-        }
-      });
+      baseUrl: 'https://dev-613272.oktapreview.com',
+      clientId: '0oagk0kmknVnF2xLE0h7',
+      redirectUri: 'http://localhost:3000/implicit/callback',
+      authParams: {
+        responseType: 'id_token'
+      }
+    });
+    this.showLogin = this.showLogin.bind(this);
+    this.logout = this.logout.bind(this);
+  }
+  componentDidMount(){
+    this.widget.session.get((response) => {
+      if(response.status !== 'INACTIVE'){
+        this.setState({user:response.login});
+      }else{
+        this.showLogin();
+      }
+    });
   }
 
-  componentDidMount(){
+  showLogin(){
+    //Backbone.history.stop();
     this.widget.renderEl({el:this.loginContainer},
       (response) => {
         this.setState({user: response.claims.email});
@@ -31,11 +42,15 @@ class LoginPage extends Component {
     );
   }
 
-  // render method
-  render() {
-    return (
-      <div className="LoginPage">
-        <h1> Login Please </h1>
+  logout(){
+    this.widget.signOut(() => {
+      this.setState({user: null});
+      this.showLogin();
+    });
+  }
+
+  render(){
+      return(
         <div>
           {this.state.user ? (
             <div className="container">
@@ -47,7 +62,6 @@ class LoginPage extends Component {
             <div ref={(div) => {this.loginContainer = div; }} />
           )}
         </div>
-      </div>
     );
   }
 
