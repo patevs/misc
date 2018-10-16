@@ -1,9 +1,0 @@
-
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-#maven target
-target
