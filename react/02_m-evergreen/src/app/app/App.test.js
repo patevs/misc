@@ -1,6 +1,7 @@
 
 /*
-  src/App.test.js
+  src/app/App/App.test.js
+  app component tests
 */
 
 // import react and react-dom libs

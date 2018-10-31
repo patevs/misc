@@ -1,28 +1,55 @@
 
-// react component library import
+/*
+  src/app/components/Evergreen/Evergreen.js
+  evergreen react component
+*/
+
+// react component library
 import React, { Component } from 'react';
+// evergreen ui library
+import { Pane, Text, Button } from 'evergreen-ui';
 
-import { Pane, Text } from 'evergreen-ui';
-
-// import evergreentron style sheet
+// evergreen style sheet
 import './Evergreen.css';
 
-// evergreen Header react component
+// evergreen component class
 class Evergreen extends Component {
   render() {
     return (
       <div className="Evergreen">
-        <h1> evergreen </h1>
-        <Pane
-          height={120}
-          width={240}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          border="default"
-        >
-          <Text>Pane</Text>
-        </Pane>
+        <h2> -- evergreen-ui -- </h2>
+        <Pane id="panes" clearfix>
+          <Pane
+            elevation={1}
+            height={120}
+            width={240}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            flexDirection="column"
+            border="default"
+            margin={5}
+            float="left"
+          >
+            <Text>Text Pane</Text>
+            <Text size={300}>Elevation 1</Text>
+          </Pane>
+          <Pane
+            elevation={2}
+            height={120}
+            width={240}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            flexDirection="column"
+            border="default"
+            margin={5}
+            float="left"
+          >
+            <Button>Button Pane</Button>
+            <Text size={300}>Elevation 2</Text>
+          </Pane>
+      </Pane>
       </div>
     );
   }
