@@ -1,6 +1,7 @@
 
 /*
-  src/App.js
+  src/app/App/App.js
+  app react component
 */
 
 // import react component library
@@ -13,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1> App Component </h1>
+        <h1> - App Component - </h1>
       </div>
     );
   }

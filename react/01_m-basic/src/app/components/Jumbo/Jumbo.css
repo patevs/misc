@@ -1,10 +1,12 @@
 
-/* Jumbo react component style sheet */
+/*
+  src/app/components/Jumbo/Jumbo.css
+  jumbotron component styles
+*/
 
 .Jumbo {
   text-align: center;
   margin: 0 auto;
-  padding-top: .5em;
 }
 
 #tron {
