@@ -1,1 +1,0 @@
-galen test ./tests/basic.test --htmlreport htmlreport-dir
