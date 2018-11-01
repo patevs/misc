@@ -1,28 +1,28 @@
 
 /*
-  src/app/components/Evergreen/Evergreen.js
-  evergreen react component
+  src/app/components/UI/UI.js
+  UI component styles
 */
 
-// react component library
+// react component library import
 import React, { Component } from 'react';
-// evergreen ui library
+// evergreen ui library import
 import { Pane, Text, Button } from 'evergreen-ui';
 
-// evergreen style sheet
-import './Evergreen.css';
+// import UI style sheet
+import './UI.css';
 
-// evergreen component class
-class Evergreen extends Component {
+// UI react component
+class UI extends Component {
   render() {
     return (
-      <div className="Evergreen">
-        <h2> -- evergreen-ui -- </h2>
+      <div className="UI">
+        <h3> --- UI --- </h3>
         <Pane id="panes" clearfix>
           <Pane
             elevation={1}
-            height={120}
-            width={240}
+            height={80}
+            width={190}
             display="flex"
             alignItems="center"
             justifyContent="center"
@@ -36,8 +36,8 @@ class Evergreen extends Component {
           </Pane>
           <Pane
             elevation={2}
-            height={120}
-            width={240}
+            height={80}
+            width={190}
             display="flex"
             alignItems="center"
             justifyContent="center"
@@ -49,10 +49,10 @@ class Evergreen extends Component {
             <Button>Button Pane</Button>
             <Text size={300}>Elevation 2</Text>
           </Pane>
-      </Pane>
+        </Pane>
       </div>
     );
   }
 }
 
-export default Evergreen;
+export default UI;

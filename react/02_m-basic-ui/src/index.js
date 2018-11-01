@@ -1,6 +1,7 @@
 
 /*
   src/index.js
+  application entry point
 */
 
 // global react and react-dom import
@@ -14,8 +15,8 @@ import './index.css';
 import Jumbo from './app/components/Jumbo/Jumbo';
 // import app component
 import App from './app/App/App';
-// import evergreen component
-import Evergreen from './app/components/Evergreen/Evergreen';
+// import UI components
+import UI from './app/components/UI/UI';
 
 // import service worker
 import * as serviceWorker from './serviceWorker';
@@ -23,9 +24,9 @@ import * as serviceWorker from './serviceWorker';
 // render jumbo component
 ReactDOM.render(<Jumbo />, document.getElementById('jumbo'));
 // render app component
-ReactDOM.render(<App />, document.getElementById('root'));
-// render evergreen component
-ReactDOM.render(<Evergreen />, document.getElementById('evergreen'));
+ReactDOM.render(<App />, document.getElementById('app-root'));
+// render UI component
+ReactDOM.render(<UI />, document.getElementById('ui'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
