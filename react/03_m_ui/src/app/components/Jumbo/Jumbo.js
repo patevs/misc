@@ -19,7 +19,7 @@ class Jumbo extends Component {
     return (
       <div className="Jumbo">
     		<Jumbotron id="tron">
-          <Image src="./assets/imgs/Jumbo.png" alt="jumbo header" />
+          <Image src="./assets/imgs/Jumbo.png" alt="Mate Freight jumbotron header" />
     		</Jumbotron>
       </div>
     );

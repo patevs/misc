@@ -17,14 +17,9 @@ class App extends Component {
     return (
       <div className="App">
         <Pane>
-          <Heading
-            size={900}
-            marginTop="default"
-          >
-            -- 03 : M_ui --
-          </Heading>
+          <Heading size={900}>--- 03 : M_ui ---</Heading>
+          <Heading size={700} marginTop="default">-- sub-title --</Heading>
         </Pane>
-        <h2> -- 03 : M_ui -- </h2>
       </div>
     );
   }
