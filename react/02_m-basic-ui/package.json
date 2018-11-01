@@ -1,6 +1,6 @@
 {
-  "name": "m-evergreen",
-  "version": "0.1.0",
+  "name": "m-basic-ui",
+  "version": "0.2",
   "private": true,
   "dependencies": {
     "evergreen-ui": "^4.2.0",
