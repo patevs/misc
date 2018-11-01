@@ -1,0 +1,5 @@
+@@ set domain localhost:8181
+
+Home page on a small mobile device
+    http://${domain}     320x600
+        check ./specs/home-page.gspec --include "mobile,all" --exclude "nomobile"
