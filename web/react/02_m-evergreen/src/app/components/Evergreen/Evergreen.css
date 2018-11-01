@@ -1,0 +1,18 @@
+
+/*
+  src/app/components/Evergreen/Evergreen.css
+  evergreen component style sheet
+*/
+
+.Evergreen {
+  text-align: center;
+  margin: .5em auto;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  max-width: 550px;
+  border: 1px dotted blue;
+}
+
+#panes {
+  margin-left: 1.5em;
+}
