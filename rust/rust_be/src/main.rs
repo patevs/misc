@@ -37,8 +37,20 @@ fn print_info(){
     println!("(0) Exit app.");
     println!("(1) Print info.");
     println!("(2) Print working directory.");
-    println!("(3) Move into cwd.");
+    println!("(3) Check environment.");
+    println!("(4) Move into cwd.");
     println!("Please input your selection.");
+    get_input();
+}
+
+// reset function
+fn reset(){
+    println!("Printing info...");
+    print_info();
+}
+
+// get the users input
+fn get_input(){
     // get input
     loop {
         let mut input = String::new();
@@ -53,13 +65,23 @@ fn print_info(){
             println!("Exiting...");
             process::exit(0);
         } else if input == 1 {
-            println!("Printing info...");
-            print_info();
+            reset();
+            break;
         } else if input == 2 {
             println!("Printing working directory...");
-            Command::new("ls").arg("-l").arg("-a")
-                     .spawn()
-                     .expect("ls command failed to start");
+            //Command::new("ls").arg("-l").arg("-a")
+            //         .spawn()
+            //         .expect("ls command failed to start");
+            //println!("directory contents:");
+            //Command::new("dir").spawn().expect("dir command failed");
+            println!("directory path");
+            Command::new("pwd").spawn().expect("pwd command failed");
+            break;
+        } else if input == 3 {
+            println!("node check:");
+            Command::new("node").arg("-v").spawn().expect("node version check command failed");
+            //reset();
+            break;
         }
     }
 }
