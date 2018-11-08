@@ -33,13 +33,19 @@ mod basic_tests {
     #[test]
     #[should_panic]
     fn test_panic(){
-        assert!(1 == 1);
         panic!("Test Panics!");
     }
 
     #[test]
     fn test_equal(){
+        // check second parameter is equal
         assert_eq!(2, 1 + 1);
+    }
+
+    #[test]
+    fn test_nt_eq(){
+        // check second parameter is not equal
+        assert_ne!(2, 1 + 2);
     }
 
 }
