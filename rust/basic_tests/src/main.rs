@@ -20,3 +20,26 @@ fn print_welcome(){
     println!("\tVersion: {}", &VERSION);
     println!("\n");
 }
+
+// basic_tests project tests module
+#[cfg(test)]
+mod basic_tests {
+
+    #[test]
+    fn test_basic(){
+        assert!(1 == 1); // Ok
+    }
+
+    #[test]
+    #[should_panic]
+    fn test_panic(){
+        assert!(1 == 1);
+        panic!("Test Panics!");
+    }
+
+    #[test]
+    fn test_equal(){
+        assert_eq!(2, 1 + 1);
+    }
+
+}
