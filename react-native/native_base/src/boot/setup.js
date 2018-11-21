@@ -1,5 +1,6 @@
 
 /*
+  src/boot/setup.js
   Setup Component
 */
 
