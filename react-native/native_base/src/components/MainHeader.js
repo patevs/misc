@@ -16,7 +16,7 @@ export default class MainHeader extends Component {
         <Header noLeft>
           <Left />
           <Body>
-            <Title>MainHeader</Title>
+            <Title> M8Fr8 </Title>
           </Body>
           <Right>
             <Button transparent>
