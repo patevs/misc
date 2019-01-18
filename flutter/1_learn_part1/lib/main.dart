@@ -7,7 +7,7 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
-// main method
+// main method - application entry point
 void main() => runApp(MyApp());
 
 // root app stateless widget class
@@ -19,14 +19,18 @@ class MyApp extends StatelessWidget {
     // app widget
     return MaterialApp(
       title: 'Startup Name Generator',
+      theme: ThemeData(
+        primarySwatch: Colors.green
+      ),
       home: RandomWords()
     );
   }
 
 }
 
-// random words stateful class
+// random words state class
 class RandomWordsState extends State<RandomWords> {
+
   // prefixing with an underscore enforces privacy
   final _suggestions = <WordPair>[];
   final _biggerFont = const TextStyle(fontSize: 18.0);
@@ -46,6 +50,7 @@ class RandomWordsState extends State<RandomWords> {
     );
   }
 
+  // build row method
   Widget _buildRow(WordPair pair) {
     return ListTile(
       title: Text(
@@ -68,9 +73,12 @@ class RandomWordsState extends State<RandomWords> {
 
 }
 
-// random words widget class
+// random words stateful widget class
 class RandomWords extends StatefulWidget {
   @override
   RandomWordsState createState() => new RandomWordsState();
 }
+
+
+// EOF
 

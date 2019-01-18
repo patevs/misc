@@ -1,6 +1,6 @@
-# flutter_app
+# startup_namer
 
-A new Flutter project.
+Learn Flutter tutorial part 1.
 
 ## Getting Started
 
