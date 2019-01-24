@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
   Widget _buildList(BuildContext context, List<DocumentSnapshot> snapshot) {
     return ListView(
       padding: const EdgeInsets.only(top: 20.0),
-      children: snapshot.map((snapshot) => _buildListItem(context, snapshot)).toList(),
+      children: snapshot.map((data) => _buildListItem(context, data)).toList(),
     );
   }
 
@@ -95,7 +95,14 @@ class _HomePageState extends State<HomePage> {
           title: Text(record.name, style: new TextStyle(color: Colors.green)),
           trailing: Text(record.votes.toString(), style: new TextStyle(color: Colors.green)),
           //onTap: () => print(record),
-          onTap: () => record.reference.updateData({'votes': record.votes + 1}),
+          //onTap: () => record.reference.updateData({'votes': record.votes + 1}),
+          onTap: () => Firestore.instance.runTransaction((transaction) async {
+            final freshSnapshot = await transaction.get(record.reference);
+            final fresh = Record.fromSnapshot(freshSnapshot);
+            await transaction.update(
+              record.reference, {'votes': fresh.votes + 1}
+            );
+          }),
         ),
       ),
     );
