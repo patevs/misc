@@ -1,4 +1,4 @@
-package com.example.babynamer;
+package com.patevs.babynamer;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
