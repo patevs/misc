@@ -12,6 +12,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 void main() => runApp(BabyNamerApp());
 
 // dummy database values
+/*
 final dummySnapshot = [
   {"name": "Filip", "votes": 15},
   {"name": "Abraham", "votes": 14},
@@ -19,6 +20,7 @@ final dummySnapshot = [
   {"name": "Ike", "votes": 10},
   {"name": "Justin", "votes": 1},
 ];
+*/
 
 // Application root stateless widget class
 class BabyNamerApp extends StatelessWidget {
@@ -30,6 +32,8 @@ class BabyNamerApp extends StatelessWidget {
       theme: ThemeData(
         // This is the theme of your application.
         primarySwatch: Colors.green,
+        primaryColor: Colors.green,
+        accentColor: Colors.greenAccent,
       ),
       home: HomePage(),
     );
@@ -58,34 +62,40 @@ class _HomePageState extends State<HomePage> {
 
   // build body private method
   Widget _buildBody(BuildContext context) {
-    // TODO: get actual snapshot from Cloud Firestore
-    return _buildList(context, dummySnapshot);
+    return StreamBuilder<QuerySnapshot>(
+      stream: Firestore.instance.collection('baby').snapshots(),
+      builder: (context, snapshot) {
+        if(!snapshot.hasData) return LinearProgressIndicator();
+        return _buildList(context, snapshot.data.documents);
+      }
+    );
   }
 
   // build list private method
-  Widget _buildList(BuildContext context, List<Map> snapshot) {
+  Widget _buildList(BuildContext context, List<DocumentSnapshot> snapshot) {
     return ListView(
       padding: const EdgeInsets.only(top: 20.0),
-      children: snapshot.map((data) => _buildListItem(context, data)).toList(),
+      children: snapshot.map((snapshot) => _buildListItem(context, snapshot)).toList(),
     );
   }
 
   // build list item private method
-  Widget _buildListItem(BuildContext context, Map data) {
-    final record = Record.fromMap(data);
+  Widget _buildListItem(BuildContext context, DocumentSnapshot data) {
+    final record = Record.fromSnapshot(data);
 
     return Padding(
       key: ValueKey(record.name),
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
       child: Container(
         decoration: BoxDecoration(
-          border: Border.all(color: Colors.grey),
+          border: Border.all(color: Colors.greenAccent),
           borderRadius: BorderRadius.circular(5.0),
         ),
         child: ListTile(
-          title: Text(record.name),
-          trailing: Text(record.votes.toString()),
-          onTap: () => print(record),
+          title: Text(record.name, style: new TextStyle(color: Colors.green)),
+          trailing: Text(record.votes.toString(), style: new TextStyle(color: Colors.green)),
+          //onTap: () => print(record),
+          onTap: () => record.reference.updateData({'votes': record.votes + 1}),
         ),
       ),
     );
