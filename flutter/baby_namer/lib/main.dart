@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 // Application entry point
-void main() => runApp(MyApp());
+void main() => runApp(BabyNamerApp());
 
 // dummy database values
 final dummySnapshot = [
@@ -21,7 +21,7 @@ final dummySnapshot = [
 ];
 
 // Application root stateless widget class
-class MyApp extends StatelessWidget {
+class BabyNamerApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -46,6 +46,8 @@ class HomePage extends StatefulWidget {
 
 // Home page state class
 class _HomePageState extends State<HomePage> {
+
+  // build method
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,11 +56,13 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  // build body private method
   Widget _buildBody(BuildContext context) {
     // TODO: get actual snapshot from Cloud Firestore
     return _buildList(context, dummySnapshot);
   }
 
+  // build list private method
   Widget _buildList(BuildContext context, List<Map> snapshot) {
     return ListView(
       padding: const EdgeInsets.only(top: 20.0),
@@ -66,6 +70,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  // build list item private method
   Widget _buildListItem(BuildContext context, Map data) {
     final record = Record.fromMap(data);
 
@@ -84,10 +89,12 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
     );
+
   }
 
 }
 
+// Record class stores a name (String) and number of votes (int)
 class Record {
   final String name;
   final int votes;
