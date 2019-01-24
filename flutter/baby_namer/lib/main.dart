@@ -26,7 +26,7 @@ class BabyNamerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Baby Namer',
+      title: 'Baby Names',
       theme: ThemeData(
         // This is the theme of your application.
         primarySwatch: Colors.green,
