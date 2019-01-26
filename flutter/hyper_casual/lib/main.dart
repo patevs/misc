@@ -57,9 +57,20 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             new Text('Hyper Casual'),
             new Text('sprite sheet animations'),
-            //Flame.util.animationAsWidget(),
+            /*
+            Flame.util.animationAsWidget(
+              Position(256.0, 256.0),
+              animation.Animation.sequenced(
+                'minotaur.png', 19, textureWidth: 96.0),
+            ),
+            */
+            new Text('-----------'),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => _clickFab(key),
+        child: Icon(Icons.add),
       ),
     );
   }
