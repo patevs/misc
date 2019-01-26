@@ -11,6 +11,7 @@ import 'package:flutter/material.dart';
 import 'dart:math' as math;
 import 'dart:ui';
 
+// flame libs
 import 'package:flame/anchor.dart';
 import 'package:flame/components/component.dart';
 import 'package:flame/game.dart';
@@ -22,7 +23,7 @@ void main() => runApp(
   new HyperCasualGame().widget
 );
 
-// Palette class
+// Palette class for storing common color values
 class Palette {
   static const PaletteEntry white = BasicPalette.white;
   static const PaletteEntry red = PaletteEntry(Color(0xFFFF0000));
