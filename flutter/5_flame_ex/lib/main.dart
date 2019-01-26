@@ -19,9 +19,6 @@ import 'package:flame/text_config.dart';
 import 'package:flame/game.dart';
 import 'package:flame/palette.dart';
 
-//import 'package:flame/animation.dart' as animation;
-//import 'package:flame/position.dart';
-
 // Text style configs
 TextConfig regular = TextConfig(color: BasicPalette.white.color);
 TextConfig small = regular.withFontSize(16.0);
