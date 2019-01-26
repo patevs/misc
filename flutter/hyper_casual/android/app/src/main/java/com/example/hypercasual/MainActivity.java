@@ -1,4 +1,4 @@
-package com.example.hypercasual;
+package com.patevs.hypercasual;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
