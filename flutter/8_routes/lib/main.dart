@@ -40,6 +40,18 @@ class LoadingScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text('Loading Screen...'),
+          RaisedButton(
+            child: Text('Continue'),
+            onPressed: () {
+              // Navigate to WelcomeScreen
+              Navigator.push(
+                context, 
+                MaterialPageRoute(
+                  builder: (context) => WelcomeScreen(title: 'Navigating Routes - Welcome Screen')
+                ),
+              );
+            },
+          )
         ],
       ),
     );
@@ -61,6 +73,13 @@ class WelcomeScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text('Welcome Screen...'),
+          RaisedButton(
+            child: Text('Go Back'),
+            onPressed: () {
+              // Navigate back to LoadingScreen
+              Navigator.pop(context);
+            },
+          )
         ],
       ),
     );
