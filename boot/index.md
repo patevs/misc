@@ -1,23 +1,31 @@
 
 # Fresh Boot
 
-> Clean Win10 install
+> Win10 dev installs
 
 ----
 
-https://git-scm.com/download/win
+## Programs & Software
 
-https://chocolatey.org/install
+* [`Git`](https://git-scm.com/download/win)
 
-https://chocolatey.org/packages/ConEmu
+* [`Chocolatey`](https://chocolatey.org/install)
 
-https://chocolatey.org/packages/SublimeText3
+### Chocolatey Packages
 
-https://hodgkins.io/ultimate-powershell-prompt-and-git-setup
+* [`ConEmu`](https://chocolatey.org/packages/ConEmu)
 
-https://github.com/dahlbyk/posh-git
+* [`SublimeText3`](https://chocolatey.org/packages/SublimeText3)
 
-https://github.com/joonro/Get-ChildItemColor
+* [`Vim`](https://chocolatey.org/packages/vim)
+
+### Terminal Customization
+
+* [`Powershell`](https://hodgkins.io/ultimate-powershell-prompt-and-git-setup)
+
+* [`Posh-Git`](https://github.com/dahlbyk/posh-git)
+
+* [`ChildItemColor`](https://github.com/joonro/Get-ChildItemColor)
 
 
 ----
