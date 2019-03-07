@@ -1,7 +1,6 @@
 [package]
-name = "terminal_app"
+name = "basic_tests"
 version = "0.1.0"
 authors = ["Patrick <ppevans11@gmail.com>"]
 
 [dependencies]
-colored = "1.6"
