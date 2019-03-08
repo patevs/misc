@@ -1,0 +1,3 @@
+main threw an exception:
+java.lang.NullPointerException
+	at patevs.hello.liti.ExampleGame.main(ExampleGame.java:19)
