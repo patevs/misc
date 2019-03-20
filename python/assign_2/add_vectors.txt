@@ -1,0 +1,42 @@
+This is a doctest for add_vectors
+
+>>> from assignment2 import add_vectors
+
+>>> add_vectors(None, [1,2,3])
+Error: first argument is not a list
+>>> add_vectors([1,2,3],None)
+Error: second argument is not a list
+>>> add_vectors("fdfdsfd","fdfdsfds")
+Error: first argument is not a list
+Error: second argument is not a list
+>>> add_vectors(None,None)
+Error: first argument is not a list
+Error: second argument is not a list
+>>> add_vectors([0,2,3,4],[3])
+Error: lengths of the two vectors are different
+>>> add_vectors([3],[0,3,12,43,8])
+Error: lengths of the two vectors are different
+>>> add_vectors(["a",2],[2,4])
+Error: attempted to add incompatible a to 2
+>>> add_vectors([4,2],["b",4])
+Error: attempted to add incompatible 4 to b
+>>> add_vectors(["f",2],["b",4])
+Error: attempted to add incompatible f to b
+>>> add_vectors([3,"f"],["b",4])
+Error: attempted to add incompatible 3 to b
+>>> add_vectors([3,4],[5,"b"])
+Error: attempted to add incompatible 4 to b
+>>> add_vectors([3,4],[5,7])
+[8, 11]
+>>> add_vectors([2.0],[2])
+Error: attempted to add incompatible 2.0 to 2
+>>> add_vectors([1,2,3,4,5,6,7,8,9],[1,1,1,1,1,1,1,1,1])
+[2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> type(add_vectors([23,4],[4,3]))
+<class 'list'>
+
+
+
+
+
+

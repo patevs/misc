@@ -1,0 +1,18 @@
+>>> from assignment2 import verbing
+>>> verbing(None)
+Error: only accepts strings
+>>> verbing(1.0)
+Error: only accepts strings
+>>> verbing("")
+''
+>>> verbing("a b c")
+'aly bly cly'
+>>> verbing("a bb c")
+'aly bbly cly'
+>>> verbing("aaa bbb c")
+'aaaing bbbing cly'
+>>> verbing("fdsfds 432432 fdsfdsf")
+'fdsfdsing 432432ing fdsfdsfing'
+>>> type(verbing("dsa fd sd fds"))
+<class 'str'>
+

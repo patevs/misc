@@ -1,0 +1,45 @@
+This is a doctest for print_frequency
+
+>>> from assignment2 import print_frequency
+
+>>> print_frequency("ThiS is String with Upper and lower case Letters")
+a  2
+c  1
+d  1
+e  5
+g  1
+h  2
+i  4
+l  2
+n  2
+o  1
+p  2
+r  4
+s  5
+t  5
+u  1
+w  2
+
+>>> print_frequency(None)
+Error: only accepts strings
+>>> print_frequency(int)
+Error: only accepts strings
+>>> print_frequency(float)
+Error: only accepts strings
+>>> print_frequency("")
+>>> print_frequency(" ")
+>>> print_frequency("AAAAA")
+a  5
+>>> print_frequency("AbABAbABA")
+a  5
+b  4
+>>> print_frequency("AbAZBAZbZABA!")
+a  5
+b  4
+z  3
+>>> print_frequency("AbAZBA*****98328504ZbZABA!")
+a  5
+b  4
+z  3
+
+
