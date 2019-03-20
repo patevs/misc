@@ -1,7 +1,5 @@
 
-# Project: 
-	
-	> mvn-sc-001 
+# mvn.002 
 
 <a href="https://travis-ci.org/patevs/mvn-sc-001"><h2> Travis CI: </h2></a> ![Build Status](https://travis-ci.org/patevs/mvn-sc-001.svg?branch=master)
 
@@ -19,3 +17,7 @@
 ### Chrome Webdriver
 
 * [Download ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
+
+
+----
+
