@@ -1,6 +1,6 @@
 [[source]]
 name = "web_scrapper"
-url = "https://github.com/patevs/misc/python/web_scrapper"
+url = "https://github.com/patevs/misc/tree/master/python/web_scrapper"
 verify_ssl = true
 
 [dev-packages]
