@@ -1,0 +1,13 @@
+[[source]]
+name = "web_scrapper"
+url = "https://github.com/patevs/misc/python/web_scrapper"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+selenium = "*"
+webdrivermanager = "*"
+
+[requires]
+python_version = "3.7"
