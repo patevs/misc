@@ -31,9 +31,9 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-    	<groupId>de.gurkenlabs</groupId>
-    	<artifactId>litiengine</artifactId>
-    	<version>${litiengine.version}</version>
+      <groupId>de.gurkenlabs</groupId>
+      <artifactId>litiengine</artifactId>
+      <version>${litiengine.version}</version>
     </dependency>
   </dependencies>
   
